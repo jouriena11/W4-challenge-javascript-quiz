@@ -24,10 +24,16 @@ nav {
 }
 
 button {
-    padding: 0px 5px;
+    padding: 2px 5px;
     margin: 3px 0px;
     background: rgb(128,0,128);
     color: white;
+    border-radius: 5px;
+    text-align: left;
+}
+
+start.button {
+    text-align: center;
 }
 
 button:hover {
@@ -42,10 +48,32 @@ button:hover {
 
 .quiz-box {
     width: 500px;
-    margin: 20px 0px;
     margin: auto;
 }
 
 .hide {
     display: none;
+}
+
+.final-score-box, .high-score-box {
+    width: 500px;
+    text-align: left;
+    margin: auto;
+}
+
+.initials {
+    display: flex;
+    text-align: center;
+    margin: 10px 0px;
+    
+}
+
+.initial-text-input {
+    height: 30px;
+    margin: 0px 10px;
+}
+
+.answer-button {
+    display: grid;
+    width: fit-content;
 }
