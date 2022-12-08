@@ -5,7 +5,7 @@ In week 4 challenge, we're assigned to create an online quiz application with Ja
 Although the online quiz app appears to be simple, the JavaScript mechanism behind is actually a lot more complicated. Completing this challenge required application of various JavaScript and DOM techniques, particularly:
 
 - Traversing through the DOM elements and manipulating them using JavaScript, particularly with
-    - append()
+    - appendChild()
     - classList.add()
     - classList.remove()
 
@@ -69,4 +69,4 @@ The View High Score link is hidden to prevent the user from clicking the link in
     </p>
 
 ## Possible Improvement
-- After the start quiz button The timer doesn't start right way
+- After the start quiz button The timer doesn't start right way. 
