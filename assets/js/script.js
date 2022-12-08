@@ -81,7 +81,7 @@ submitScoreBtn.addEventListener("click", () => {
 
 function storeRecord() { // Store the user's name and score to the localStorage
     scoreRecords.push({
-        name: nameInput.value,
+        name: nameInput.value.trim(),
         score: secondsLeft,
     })
 
@@ -154,14 +154,10 @@ function init() {
                     } else {
                     commentAppend.textContent = "Wrong!"; // if wrong, then append "wrong!" message
                     
-                    //Penalty -- 10 seconds are deducted from the remaining time if given a wrong answer. To prevent the remaining time showing 
-                    //a negative number, a condition is set so that if the remaining time is less than or equal to 10, then the seconds left becomes 0
-                    //if a wrong answer is chosen.
-                    
-                    if (secondsLeft <= 10) {
-                        secondsLeft = 0;
+                    if (secondsLeft <= 10) { // To prevent the remaining time showing a negative number, the condition is set so that if the remaining time is less than or equal to 10, then the seconds left becomes 0 when a wrong answer is chosen.
+                        secondsLeft = 0; // 
                     } else {
-                        secondsLeft -= 10;
+                        secondsLeft -= 10; // Penalty: 10 seconds are deducted from the remaining time if given a wrong answer
                     }}
                 
                 event.target.parentElement.appendChild(commentAppend); // append the Correct/Wrong message to <div.answer-button>
