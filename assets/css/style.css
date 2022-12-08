@@ -32,8 +32,13 @@ button {
     text-align: left;
 }
 
-start.button {
+.start-button {
     text-align: center;
+    margin-top: 5px;
+}
+
+#submit-score {
+    margin-left: 5px;
 }
 
 button:hover {
@@ -70,10 +75,18 @@ button:hover {
 
 .initial-text-input {
     height: 30px;
-    margin: 0px 10px;
+    margin-left: 5px;
 }
 
 .answer-button {
     display: grid;
     width: fit-content;
 }
+
+.high-score-entry {
+    background: rgb(128,0,128,0.4);
+    line-height: 1.5;
+    padding: 5px 10px;
+    margin: 5px 0px;
+}
+
